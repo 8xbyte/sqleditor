@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34707.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "sqleditor (Package)", "sqleditor\sqleditor (Package)\sqleditor (Package).wapproj", "{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqleditor", "sqleditor\sqleditor\sqleditor.vcxproj", "{90BF2DA3-62DB-4295-A35A-1A644C279359}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|ARM64.Build.0 = Debug|ARM64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|x64.ActiveCfg = Debug|x64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|x64.Build.0 = Debug|x64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|x64.Deploy.0 = Debug|x64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|x86.ActiveCfg = Debug|x86
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|x86.Build.0 = Debug|x86
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Debug|x86.Deploy.0 = Debug|x86
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|ARM64.ActiveCfg = Release|ARM64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|ARM64.Build.0 = Release|ARM64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|ARM64.Deploy.0 = Release|ARM64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|x64.ActiveCfg = Release|x64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|x64.Build.0 = Release|x64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|x64.Deploy.0 = Release|x64
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|x86.ActiveCfg = Release|x86
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|x86.Build.0 = Release|x86
+		{FAA2EDB7-0946-4518-89B4-78A0DE0C6EF9}.Release|x86.Deploy.0 = Release|x86
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Debug|ARM64.Build.0 = Debug|ARM64
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Debug|x64.ActiveCfg = Debug|x64
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Debug|x64.Build.0 = Debug|x64
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Debug|x86.ActiveCfg = Debug|Win32
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Debug|x86.Build.0 = Debug|Win32
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Release|ARM64.ActiveCfg = Release|ARM64
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Release|ARM64.Build.0 = Release|ARM64
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Release|x64.ActiveCfg = Release|x64
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Release|x64.Build.0 = Release|x64
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Release|x86.ActiveCfg = Release|Win32
+		{90BF2DA3-62DB-4295-A35A-1A644C279359}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {727C752B-4403-4E43-98C3-2CB58612D1BA}
+	EndGlobalSection
+EndGlobal

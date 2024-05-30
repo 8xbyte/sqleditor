@@ -1,0 +1,9 @@
+namespace sqleditor
+{
+    [default_interface]
+    runtimeclass AddConnectionPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        AddConnectionPage();
+        Int32 MyProperty;
+    }
+}

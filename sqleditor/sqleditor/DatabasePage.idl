@@ -1,0 +1,9 @@
+namespace sqleditor
+{
+    [default_interface]
+    runtimeclass DatabasePage : Microsoft.UI.Xaml.Controls.Page
+    {
+        DatabasePage();
+        Int32 MyProperty;
+    }
+}

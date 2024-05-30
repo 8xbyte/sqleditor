@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MainWindow.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="NavigationService.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLCoreService.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="NavigationService.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLCoreService.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{e48dc53e-40b1-40cb-970a-f89935452892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{74d70c4f-ac19-4d83-869c-fbb2aee0ff30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages">
+      <UniqueIdentifier>{e3495243-c992-41c2-908c-3b233522934d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services">
+      <UniqueIdentifier>{c9a7bd38-7d01-4210-838b-168b834ea627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dlls Debug">
+      <UniqueIdentifier>{550d1f08-6307-408e-afc1-00f1815bc155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dlls Release">
+      <UniqueIdentifier>{cb28f1c8-9369-41b0-85d9-c6dfd68e7326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configs">
+      <UniqueIdentifier>{3f0721e4-a2c7-430b-853b-2f30e3b0b609}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="..\..\..\sqlcore\build\bin\Debug\LIBPQ.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\libssl-3-x64.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\SQLCore.Factory.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\SQLCore.Logger.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\SQLCore.Plugins.MySQL.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\SQLCore.Plugins.PostgreSQL.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\SQLCore.Plugins.SQLite3.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\sqlite3.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\zlibd1.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\zstd.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\libcrypto-3-x64.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Debug\libmysql.dll">
+      <Filter>Dlls Debug</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\SQLCore.Factory.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\SQLCore.Logger.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\SQLCore.Plugins.MySQL.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\SQLCore.Plugins.PostgreSQL.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\SQLCore.Plugins.SQLite3.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\sqlite3.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\zlib1.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\zstd.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\libcrypto-3-x64.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\libmysql.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\LIBPQ.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="..\..\..\sqlcore\build\bin\Release\libssl-3-x64.dll">
+      <Filter>Dlls Release</Filter>
+    </None>
+    <None Include="Connections.json">
+      <Filter>Configs</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <Filter>Windows</Filter>
+    </Page>
+    <Page Include="HomePage.xaml">
+      <Filter>Pages</Filter>
+    </Page>
+    <Page Include="AddConnectionPage.xaml">
+      <Filter>Pages</Filter>
+    </Page>
+    <Page Include="SettingsPage.xaml">
+      <Filter>Pages</Filter>
+    </Page>
+    <Page Include="DatabasePage.xaml">
+      <Filter>Pages</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+</Project>

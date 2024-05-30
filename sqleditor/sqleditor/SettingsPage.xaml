@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="sqleditor.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:sqleditor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="StackPanel" x:Name="SettingsBlock">
+            <Setter Property="Padding" Value="20"/>
+        </Style>
+        <Style TargetType="Grid" x:Name="SettingBlock">
+            <Setter Property="Background" Value="{StaticResource LayerFillColorDefaultBrush}"/>
+            <Setter Property="Padding" Value="25 15"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ControlElevationBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>  
+        </Style>
+        <Style TargetType="StackPanel" x:Name="SettingBlockInfo">
+            <Setter Property="Orientation" Value="Horizontal"/>
+        </Style>
+        <Style TargetType="FontIcon" x:Name="SettingBlockIcon">
+            <Setter Property="Margin" Value="10 0"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Name="SettingBlockTitles">
+            <Setter Property="Margin" Value="25 0 0 0"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Name="SettingBlockTitle" BasedOn="{StaticResource SubtitleTextBlockStyle}">
+
+        </Style>
+        <Style TargetType="TextBlock" x:Name="SettingBlockSubTitle" BasedOn="{StaticResource BodyStrongTextBlockStyle}">
+            
+        </Style>
+        <Style TargetType="TextBox" x:Name="SettingBlockTextBox" BasedOn="{StaticResource DefaultTextBoxStyle}">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="200"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Name="SettingBlockToggleSwitchBlock">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="MinWidth" Value="0"/>
+            <Setter Property="MinHeight" Value="0"/>
+        </Style>
+        <Style TargetType="ToggleSwitch" x:Name="SettingBlockToggleSwitch" BasedOn="{StaticResource DefaultToggleSwitchStyle}">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="MaxWidth" Value="100"/>
+        </Style>
+        <Style TargetType="ComboBox" x:Name="SettingBlockComboBox" BasedOn="{StaticResource DefaultComboBoxStyle}">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+
+    <StackPanel Style="{StaticResource SettingsBlock}">
+        <Grid Style="{StaticResource SettingBlock}">
+            <StackPanel Style="{StaticResource SettingBlockInfo}">
+                <FontIcon Style="{StaticResource SettingBlockIcon}" Glyph="&#xEC50;"/>
+                <StackPanel Style="{StaticResource SettingBlockTitles}">
+                    <TextBlock Style="{StaticResource SettingBlockTitle}">Тема приложения</TextBlock>
+                    <TextBlock Style="{StaticResource SettingBlockSubTitle}">Выбор темы приложения</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <ComboBox SelectedIndex="0" Style="{StaticResource SettingBlockComboBox}">
+                <ComboBoxItem>Тёмная тема</ComboBoxItem>
+                <ComboBoxItem>Светлая тема</ComboBoxItem>
+                <ComboBoxItem>Системная тема</ComboBoxItem>
+            </ComboBox>
+        </Grid>
+        <Grid Style="{StaticResource SettingBlock}">
+            <StackPanel Style="{StaticResource SettingBlockInfo}">
+                <FontIcon Style="{StaticResource SettingBlockIcon}" Glyph="&#xEC50;"/>
+                <StackPanel Style="{StaticResource SettingBlockTitles}">
+                    <TextBlock Style="{StaticResource SettingBlockTitle}">Стиль навигации</TextBlock>
+                    <TextBlock Style="{StaticResource SettingBlockSubTitle}">Выбор стиля навигации</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <ComboBox SelectedIndex="0" Style="{StaticResource SettingBlockComboBox}">
+                <ComboBoxItem>Сверху</ComboBoxItem>
+                <ComboBoxItem>Слева</ComboBoxItem>
+            </ComboBox>
+        </Grid>
+        <Grid Style="{StaticResource SettingBlock}">
+            <StackPanel Style="{StaticResource SettingBlockInfo}">
+                <FontIcon Style="{StaticResource SettingBlockIcon}" Glyph="&#xEC50;"/>
+                <StackPanel Style="{StaticResource SettingBlockTitles}">
+                    <TextBlock Style="{StaticResource SettingBlockTitle}">Автосохранение подключений</TextBlock>
+                    <TextBlock Style="{StaticResource SettingBlockSubTitle}">Нужно ли сохранять новые подключения</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Style="{StaticResource SettingBlockToggleSwitchBlock}">
+                <ToggleSwitch IsOn="True" OnContent="Включено" OffContent="Выключено" Style="{StaticResource SettingBlockToggleSwitch}"/>
+            </StackPanel>
+        </Grid>
+        <Grid Style="{StaticResource SettingBlock}">
+            <StackPanel Style="{StaticResource SettingBlockInfo}">
+                <FontIcon Style="{StaticResource SettingBlockIcon}" Glyph="&#xEC50;"/>
+                <StackPanel Style="{StaticResource SettingBlockTitles}">
+                    <TextBlock Style="{StaticResource SettingBlockTitle}">Файл конфигурации</TextBlock>
+                    <TextBlock Style="{StaticResource SettingBlockSubTitle}">Путь до файла конфигурации</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <TextBox Text="/path/to/config" Style="{StaticResource SettingBlockTextBox}"/>
+        </Grid>
+        <Grid Style="{StaticResource SettingBlock}">
+            <StackPanel Style="{StaticResource SettingBlockInfo}">
+                <FontIcon Style="{StaticResource SettingBlockIcon}" Glyph="&#xEC50;"/>
+                <StackPanel Style="{StaticResource SettingBlockTitles}">
+                    <TextBlock Style="{StaticResource SettingBlockTitle}">Файл подключений</TextBlock>
+                    <TextBlock Style="{StaticResource SettingBlockSubTitle}">Путь до файла подключений</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <TextBox Text="/path/to/conenctios" Style="{StaticResource SettingBlockTextBox}"/>
+        </Grid>
+    </StackPanel>
+</Page>
